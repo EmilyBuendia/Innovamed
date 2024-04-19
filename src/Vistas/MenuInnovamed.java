@@ -32,29 +32,46 @@ public class MenuInnovamed extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(0, 147, 185));
         jButton1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Agendar.png"))); // NOI18N
         jButton1.setText("Citas");
         jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton1.setBorderPainted(false);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, -1, -1));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(0, 147, 185));
         jButton2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/doctor.png"))); // NOI18N
         jButton2.setText("Medicos");
         jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton2.setBorderPainted(false);
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, -1));
 
+        jButton3.setBackground(new java.awt.Color(0, 147, 185));
         jButton3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Paciente.png"))); // NOI18N
         jButton3.setText("Pacientes ");
         jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton3.setBorderPainted(false);
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, -1, 50));
 
+        jButton4.setBackground(new java.awt.Color(0, 147, 185));
         jButton4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/factura.png"))); // NOI18N
         jButton4.setText("Pagos ");
         jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton4.setBorderPainted(false);
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 51));
@@ -71,7 +88,7 @@ public class MenuInnovamed extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, 40, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Menu2.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/MenuPrincipal.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 420));
 
         pack();
@@ -80,6 +97,10 @@ public class MenuInnovamed extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
             
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
