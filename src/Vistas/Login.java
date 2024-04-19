@@ -53,6 +53,12 @@ public class Login extends javax.swing.JFrame {
         jCheckBoxRecordarU.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jCheckBoxRecordarU.setText("Recordar usuario");
         getContentPane().add(jCheckBoxRecordarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, -1, -1));
+
+        jTextUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextUsuarioActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 170, 30));
         getContentPane().add(jPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 170, 30));
 
@@ -81,6 +87,10 @@ public class Login extends javax.swing.JFrame {
     private void jBtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jBtnSalirActionPerformed
+
+    private void jTextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
