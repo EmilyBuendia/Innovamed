@@ -40,43 +40,53 @@ public class Login extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Usuario.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        Usuario.setForeground(new java.awt.Color(0, 0, 102));
+        Usuario.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
+        Usuario.setForeground(new java.awt.Color(16, 124, 152));
         Usuario.setText("Usuario :");
-        getContentPane().add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, -1));
+        getContentPane().add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel2.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(16, 124, 152));
         jLabel2.setText("Contraseña :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, -1, -1));
 
-        jCheckBoxRecordarU.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jCheckBoxRecordarU.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        jCheckBoxRecordarU.setForeground(new java.awt.Color(16, 124, 152));
         jCheckBoxRecordarU.setText("Recordar usuario");
-        getContentPane().add(jCheckBoxRecordarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, -1, -1));
+        getContentPane().add(jCheckBoxRecordarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, -1, -1));
 
+        jTextUsuario.setFont(new java.awt.Font("Ebrima", 0, 12)); // NOI18N
         jTextUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextUsuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 170, 30));
-        getContentPane().add(jPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 170, 30));
+        getContentPane().add(jTextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 190, 30));
 
-        jBtnIniciarS.setBackground(new java.awt.Color(193, 255, 255));
-        jBtnIniciarS.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jBtnIniciarS.setText("Inciar Secion ");
-        getContentPane().add(jBtnIniciarS, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 340, -1, -1));
+        jPassword.setFont(new java.awt.Font("Ebrima", 0, 12)); // NOI18N
+        getContentPane().add(jPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 190, 30));
+
+        jBtnIniciarS.setBackground(new java.awt.Color(86, 195, 193));
+        jBtnIniciarS.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jBtnIniciarS.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnIniciarS.setText("Iniciar sesión");
+        jBtnIniciarS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnIniciarSActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBtnIniciarS, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, -1, 30));
 
         jBtnSalir.setBackground(new java.awt.Color(147, 198, 245));
         jBtnSalir.setFont(new java.awt.Font("Segoe UI Emoji", 3, 18)); // NOI18N
         jBtnSalir.setForeground(new java.awt.Color(255, 0, 0));
-        jBtnSalir.setText("x");
+        jBtnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerca.png"))); // NOI18N
         jBtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(jBtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, 50, 20));
+        getContentPane().add(jBtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, 40, 40));
 
         jLabelLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo_Login.jpg"))); // NOI18N
         getContentPane().add(jLabelLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 380));
@@ -84,13 +94,17 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jTextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextUsuarioActionPerformed
+
     private void jBtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jBtnSalirActionPerformed
 
-    private void jTextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextUsuarioActionPerformed
+    private void jBtnIniciarSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIniciarSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextUsuarioActionPerformed
+    }//GEN-LAST:event_jBtnIniciarSActionPerformed
 
     /**
      * @param args the command line arguments
